@@ -15,7 +15,8 @@ var running = true;
 
 ctx.font = "60px Arial";
 
-paddle2.dif = prompt("Difficulty", "(1 = easy, 2 = medium, 3 = hard, 4 = impossible)");
+var dif = prompt("Difficulty", "(1 = easy, 2 = medium, 3 = hard, 4 = impossible)");
+paddle2.dif = parseInt(dif, 10);
 paddle2.checkStat();
 console.log(paddle2.dif);
 
